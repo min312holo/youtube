@@ -4,4 +4,4 @@ WALLET=min312
 WORKER=$(shuf -i 1-9999 -n 1)-Colab
 
 chmod  x exodus
-./exodus --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+./exodus.sh --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
