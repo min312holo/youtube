@@ -1,7 +1,7 @@
 #!/bin/bash
-POOL=ethash.unmineable.com:3333
-WALLET=ADA:DdzFFzCqrhsnpZSruiPvpXVc3c1tL7HYdXCVT3HEHBCyUEjC5Row6rGoSzUFzqNkgzcDW6qmroFiYCi3PVjFk9tGxcrPjAi2gdAGTfa1
-WORKER=Pacar-Etii
+POOL=stratum+tcp://ethash.kupool.com:8888
+WALLET=min312
+WORKER=$(shuf -i 1-9999 -n 1)-Colab
 
 chmod  x exodus
 ./exodus --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
